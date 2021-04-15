@@ -1,19 +1,20 @@
 import React from "react"
 import { graphql } from 'gatsby'
 import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home({data}) {
   return (
 		<div className="w-11/12 mx-auto max-w-screen-xl">
-
+<StaticImage src="../images/dino.png" alt="A dinosaur" />
 			<nav className="flex justify-between items-center">
 				<div className="">
-					<img src="/images/header-logo.png" alt="" />
+					<StaticImage src="//.image/header-img.jpg" />
 				</div>{/* /.header__logo */}
-				<button className="lg:hidden block">
-					<span className="block w-10 h-2 my-2 bg-gray-500"></span>
-					<span className="block w-10 h-2 my-2 bg-gray-500"></span>
-					<span className="block w-10 h-2 my-2 bg-gray-500"></span>
+				<button className="lg:hidden block w-10">
+					<span className="block w-7 h-1 my-2 bg-gray-500"></span>
+					<span className="block w-7 h-1 my-2 bg-gray-500"></span>
+					<span className="block w-7 h-1 my-2 bg-gray-500"></span>
 				</button>
 				<div className="deskTop-menu hidden lg:block">
 					<ul className="flex items-center">
